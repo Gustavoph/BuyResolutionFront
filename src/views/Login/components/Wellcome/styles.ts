@@ -14,7 +14,7 @@ export const Text = styled.div`
   padding-top: 2rem;
 `;
 
-export const Image = styled.img``;
+export const Logo = styled.img``;
 
 export const Title = styled.h1`
   font-size: 3rem;

@@ -7,7 +7,7 @@ export const Container = styled.div`
   height: 39.7rem;
   border-radius: ${({theme}) => theme.border.radius};
   background-color: ${({theme}) => theme.colors.secondary};
-`
+`;
 
 export const Content = styled.div`
   display: flex;

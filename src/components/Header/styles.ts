@@ -36,12 +36,12 @@ export const Option = styled.p`
 export const Logo = styled.img`
   width: 18rem;
   margin: 0;
-  padding: 0;
+  padding-left: 1rem;
 `
 
 export const Icons = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 18rem;
   font-size: 2rem;
   color: white;

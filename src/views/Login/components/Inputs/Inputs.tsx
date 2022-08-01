@@ -9,6 +9,8 @@ import {
   Division,
 } from './styles'
 
+import { Link } from 'react-router-dom'
+
 export function Inputs() {
   return (
     <Container>
@@ -16,13 +18,15 @@ export function Inputs() {
         <LogIn>
           <Input placeholder="Email" type={'email'} />
           <Input placeholder="Senha" type={'password'} />
-          <LogInButton>Entrar</LogInButton>
+          <Link title={'Entrar'} to={'/market'}>
+            <LogInButton>Entrar</LogInButton>
+          </Link>
         </LogIn>
         <Division>Ou</Division>
         <SignUp>
-          <SignUpButton onClick={() => console.log('Criar Conta')}>
-            Criar Conta
-          </SignUpButton>
+          <Link title={'Criar Conta'} to={'/signup'}>
+            <SignUpButton>Criar Conta</SignUpButton>
+          </Link>
         </SignUp>
       </Content>
     </Container>

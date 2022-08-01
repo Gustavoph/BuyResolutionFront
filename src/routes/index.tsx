@@ -2,11 +2,13 @@ import { Routes, Route } from 'react-router-dom'
 
 import { Login } from '../views/Login'
 import { Market } from '../views/Market'
+import { SignUp } from '../views/SignUp'
 
 export function AppRoutes() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
       <Route
         path="/market/foods"
         element={<Market food={true} drink={false} />}

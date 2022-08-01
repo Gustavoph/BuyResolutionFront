@@ -1,11 +1,11 @@
 import {
   Container,
   Content,
-  SignIn,
-  SignOut,
+  LogIn,
+  SignUp,
   Input,
-  ButtonSignIn,
-  ButtonSignOut,
+  LogInButton,
+  SignUpButton,
   Division,
 } from './styles'
 
@@ -13,17 +13,17 @@ export function Inputs() {
   return (
     <Container>
       <Content>
-        <SignIn>
+        <LogIn>
           <Input placeholder="Email" type={'email'} />
           <Input placeholder="Senha" type={'password'} />
-          <ButtonSignIn>Entrar</ButtonSignIn>
-        </SignIn>
+          <LogInButton>Entrar</LogInButton>
+        </LogIn>
         <Division>Ou</Division>
-        <SignOut>
-          <ButtonSignOut onClick={() => console.log('Criar Conta')}>
+        <SignUp>
+          <SignUpButton onClick={() => console.log('Criar Conta')}>
             Criar Conta
-          </ButtonSignOut>
-        </SignOut>
+          </SignUpButton>
+        </SignUp>
       </Content>
     </Container>
   )

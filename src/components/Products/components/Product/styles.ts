@@ -16,7 +16,7 @@ export const Content = styled.div`
 
 export const ProductImage = styled.img``
 
-export const Image = styled.div`
+export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 13.7rem;

@@ -2,7 +2,7 @@ import {
   Container,
   Content,
   ProductImage,
-  Image,
+  ImageContainer,
   Informations,
   Name,
   Price,
@@ -18,9 +18,9 @@ export function Product({ image }: ImagePath) {
   return (
     <Container>
       <Content>
-        <Image>
-          <ProductImage src={image} />
-        </Image>
+        <ImageContainer>
+          <ProductImage src={image} alt={''} />
+        </ImageContainer>
         <Informations>
           <Name>Cerveja Heineken - Long Neck 330ml</Name>
           <Price>R$ 7,00</Price>

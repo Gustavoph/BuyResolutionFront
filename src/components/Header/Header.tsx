@@ -15,7 +15,7 @@ import { FiSearch, FiUser, FiShoppingBag } from 'react-icons/fi'
 export function Header() {
   const options = ['Geral', 'Comidas', 'Bebidas']
 
-  const List = options.map((option) => <Option>{option}</Option>)
+  const List = options.map((option) => <Option key={option}>{option}</Option>)
 
   return (
     <Container>

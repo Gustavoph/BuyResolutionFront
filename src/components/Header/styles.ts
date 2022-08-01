@@ -21,6 +21,9 @@ export const Options = styled.div`
   justify-content: center;
   align-items: center;
   width: 18rem;
+  a {
+    text-decoration: none;
+  }
 `
 
 export const Option = styled.p`

@@ -11,7 +11,6 @@ interface TypeOfProducts {
 }
 
 function returnImagePath({ food, drink }: TypeOfProducts): string {
-  console.log(food, drink)
   if (food && !drink) return Comida
   else return Cerveja
 }
@@ -22,6 +21,14 @@ export function Products({ food, drink }: TypeOfProducts) {
   return (
     <Container>
       <Content>
+        <Product image={imagePath} />
+        <Product image={imagePath} />
+        <Product image={imagePath} />
+        <Product image={imagePath} />
+        <Product image={imagePath} />
+        <Product image={imagePath} />
+        <Product image={imagePath} />
+        <Product image={imagePath} />
         <Product image={imagePath} />
         <Product image={imagePath} />
         <Product image={imagePath} />

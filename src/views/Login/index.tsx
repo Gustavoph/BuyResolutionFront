@@ -1,9 +1,15 @@
-import { Container, Title } from './styles';
+import { Container, Content } from './styles'
+
+import { Wellcome } from './components/Wellcome/Wellcome'
+import { Inputs } from './components/Inputs/Inputs'
 
 export function Login() {
   return (
     <Container>
-      <Title>Login</Title>
+      <Content>
+        <Wellcome />
+        <Inputs />
+      </Content>
     </Container>
   )
 }

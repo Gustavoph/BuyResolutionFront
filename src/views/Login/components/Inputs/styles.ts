@@ -43,6 +43,7 @@ export const LogInButton = styled.button`
   border-radius: ${({ theme }) => theme.border.radius};
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.tertiary};
+  cursor: pointer;
   :hover {
     filter: brightness(0.7);
   }
@@ -55,6 +56,7 @@ export const SignUpButton = styled.button`
   border-radius: ${({ theme }) => theme.border.radius};
   color: ${({ theme }) => theme.colors.black};
   background-color: ${({ theme }) => theme.colors.white};
+  cursor: pointer;
   :hover {
     filter: brightness(0.7);
   }

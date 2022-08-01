@@ -8,14 +8,29 @@ import {
   Icon,
 } from './styles'
 
+import { Link } from 'react-router-dom'
+
 import LogoBeResolution from '../../assets/BeResolution.svg'
 
 import { FiSearch, FiUser, FiShoppingBag } from 'react-icons/fi'
 
-export function Header() {
-  const options = ['Geral', 'Comidas', 'Bebidas']
+interface OptionProps {
+  router: string
+  name: string
+}
 
-  const List = options.map((option) => <Option key={option}>{option}</Option>)
+export function Header() {
+  const options: OptionProps[] = [
+    { router: '/market', name: 'Geral' },
+    { router: '/market/foods', name: 'Comidas' },
+    { router: '/market/drinks', name: 'Bebidas' },
+  ]
+
+  const List = options.map((option) => (
+    <Link title={option.name} key={option.name} to={option.router}>
+      <Option>{option.name}</Option>
+    </Link>
+  ))
 
   return (
     <Container>

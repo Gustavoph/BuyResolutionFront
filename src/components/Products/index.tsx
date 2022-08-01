@@ -5,31 +5,27 @@ import { Product } from './components/Product'
 import Cerveja from '../../assets/Cerveja.png'
 import Comida from '../../assets/Comida.png'
 
-interface TypeOfProducts{
-  food: boolean,
+interface TypeOfProducts {
+  food: boolean
   drink: boolean
-
 }
 
-function returnImagePath({food, drink}: TypeOfProducts) : string {
+function returnImagePath({ food, drink }: TypeOfProducts): string {
   console.log(food, drink)
-  if(food && !drink)
-    return Comida
-  else
-    return Cerveja
-} 
+  if (food && !drink) return Comida
+  else return Cerveja
+}
 
-export function Products({food, drink}: TypeOfProducts) {
+export function Products({ food, drink }: TypeOfProducts) {
+  const imagePath = returnImagePath({ food, drink })
 
-  let imagePath = returnImagePath({food, drink})
-
-  return(
+  return (
     <Container>
       <Content>
-        <Product image={imagePath}/>
-        <Product image={imagePath}/>
-        <Product image={imagePath}/>
-        <Product image={imagePath}/>
+        <Product image={imagePath} />
+        <Product image={imagePath} />
+        <Product image={imagePath} />
+        <Product image={imagePath} />
       </Content>
     </Container>
   )

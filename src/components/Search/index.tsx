@@ -1,10 +1,10 @@
 import { Button, Buttons, Container, Content, InputSearch } from './styles'
 
 export function Search() {
-  return(
+  return (
     <Container>
       <Content>
-        <InputSearch placeholder='Pesquisar'/>
+        <InputSearch placeholder="Pesquisar" />
         <Buttons>
           <Button>Ordenar</Button>
           <Button>Filtros</Button>

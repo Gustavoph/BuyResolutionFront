@@ -4,38 +4,34 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary};
+  border-radius: ${({ theme }) => theme.border.radius};
+  box-shadow: 0 0 0.5rem 0 #070707;
 `
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 112rem;
-  margin: 0 auto;
-  width: 41.5rem;
-  box-shadow: 0 0 1em black;
-  border-radius: ${({ theme }) => theme.border.radius};
-  background-color: ${({ theme }) => theme.colors.secondary};
+  padding: 4.2rem;
 `
+
 export const Top = styled.div`
+  position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  width: ${({ theme }) => theme.inputSize.md.width};
-  height:  ${({ theme }) => theme.inputSize.md.height};
-  margin-top: 2.4rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
 `
 
 export const Title = styled.h1`
   margin: 0;
   color: ${({ theme }) => theme.colors.white};
-  padding-left: 2rem;
 `
+
 export const Icon = styled.div`
+  position: absolute;
+  left: 0rem;
+  top: 0.25rem;
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -49,8 +45,6 @@ export const Icon = styled.div`
 export const InputsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: ${({ theme }) => theme.inputSize.md.width};
 `
 
 export const Input = styled.input`
@@ -59,26 +53,24 @@ export const Input = styled.input`
   border: ${({ theme }) => theme.border.type};
   border-radius: ${({ theme }) => theme.border.radius};
   outline: none;
-  margin-bottom: 2.4rem;
-  padding: 0%;
-  :last-child{
+  padding: 0.4rem 1.2rem;
+  margin-bottom: 2rem;
+  :last-child {
     margin-bottom: 0;
-  }
-  ::placeholder{
-    padding-left: 1rem;
   }
 `
 
 export const SignOutButton = styled.button`
-  width: ${({ theme }) => theme.inputSize.md.width};
-  height: ${({ theme }) => theme.inputSize.md.height};
+  width: 100%;
+  height: 4.2rem;
   border: ${({ theme }) => theme.border.type};
   border-radius: ${({ theme }) => theme.border.radius};
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.tertiary};
-  margin-top: 2.4rem;
-  margin-bottom: 2.4rem;
-  padding: 0;
+  margin-top: 2rem;
+  padding: 0.4rem 1.2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
   cursor: pointer;
   :hover {
     filter: brightness(0.7);

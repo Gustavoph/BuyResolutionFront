@@ -13,17 +13,16 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   width: 100%;
   padding: 8.6rem 5rem;
 `
 
-export const SignIn = styled.div`
+export const LogIn = styled.div`
   display: flex;
   flex-direction: column;
 `
 
-export const SignOut = styled.div`
+export const SignUp = styled.div`
   display: flex;
   flex-direction: column;
 `
@@ -37,25 +36,27 @@ export const Input = styled.input`
   outline: none;
 `
 
-export const ButtonSignIn = styled.button`
+export const LogInButton = styled.button`
   width: ${({ theme }) => theme.inputSize.md.width};
   height: ${({ theme }) => theme.inputSize.md.height};
   border: ${({ theme }) => theme.border.type};
   border-radius: ${({ theme }) => theme.border.radius};
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.tertiary};
+  cursor: pointer;
   :hover {
     filter: brightness(0.7);
   }
 `
 
-export const ButtonSignOut = styled.button`
+export const SignUpButton = styled.button`
   width: ${({ theme }) => theme.inputSize.md.width};
   height: ${({ theme }) => theme.inputSize.md.height};
   border: ${({ theme }) => theme.border.type};
   border-radius: ${({ theme }) => theme.border.radius};
   color: ${({ theme }) => theme.colors.black};
   background-color: ${({ theme }) => theme.colors.white};
+  cursor: pointer;
   :hover {
     filter: brightness(0.7);
   }

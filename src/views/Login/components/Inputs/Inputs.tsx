@@ -1,29 +1,33 @@
 import {
   Container,
   Content,
-  SignIn,
-  SignOut,
+  LogIn,
+  SignUp,
   Input,
-  ButtonSignIn,
-  ButtonSignOut,
+  LogInButton,
+  SignUpButton,
   Division,
 } from './styles'
+
+import { Link } from 'react-router-dom'
 
 export function Inputs() {
   return (
     <Container>
       <Content>
-        <SignIn>
+        <LogIn>
           <Input placeholder="Email" type={'email'} />
           <Input placeholder="Senha" type={'password'} />
-          <ButtonSignIn>Entrar</ButtonSignIn>
-        </SignIn>
+          <Link title={'Entrar'} to={'/market'}>
+            <LogInButton>Entrar</LogInButton>
+          </Link>
+        </LogIn>
         <Division>Ou</Division>
-        <SignOut>
-          <ButtonSignOut onClick={() => console.log('Criar Conta')}>
-            Criar Conta
-          </ButtonSignOut>
-        </SignOut>
+        <SignUp>
+          <Link title={'Criar Conta'} to={'/signup'}>
+            <SignUpButton>Criar Conta</SignUpButton>
+          </Link>
+        </SignUp>
       </Content>
     </Container>
   )

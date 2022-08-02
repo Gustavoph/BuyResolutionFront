@@ -19,11 +19,10 @@ export const InputSearch = styled.input`
   height: 3rem;
   border: ${({ theme }) => theme.border.type};
   border-radius: 0.8rem;
-  margin-left: 1rem;
 `
 
 export const Buttons = styled.div`
-  padding: 0rem 1rem 0rem 3.5rem;
+  padding: 0rem 0rem 0rem 3.5rem;
 `
 
 export const Button = styled.button`

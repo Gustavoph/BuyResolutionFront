@@ -12,8 +12,8 @@ interface TypeOfProducts {
 export function Market({ food, drink }: TypeOfProducts) {
   return (
     <Container>
+      <Header />
       <Content>
-        <Header />
         <Search />
         <Products food={food} drink={drink} />
       </Content>

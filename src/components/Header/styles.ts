@@ -41,19 +41,3 @@ export const Logo = styled.img`
   margin: 0;
   padding-left: 1rem;
 `
-
-export const Icons = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  width: 18rem;
-  font-size: 2rem;
-  color: white;
-`
-
-export const Icon = styled.div`
-  padding: 1rem;
-  cursor: pointer;
-  :hover {
-    color: gray;
-  }
-`

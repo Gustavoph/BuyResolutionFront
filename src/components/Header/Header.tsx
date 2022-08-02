@@ -1,18 +1,9 @@
-import {
-  Container,
-  Content,
-  Options,
-  Option,
-  Logo,
-  Icons,
-  Icon,
-} from './styles'
+import { Container, Content, Options, Option, Logo } from './styles'
 
 import { Link } from 'react-router-dom'
 
 import LogoBeResolution from '../../assets/BeResolution.svg'
-
-import { FiSearch, FiUser, FiShoppingBag } from 'react-icons/fi'
+import { Icons } from './components/Icons'
 
 interface OptionProps {
   router: string
@@ -37,17 +28,7 @@ export function Header() {
       <Content>
         <Logo src={LogoBeResolution} />
         <Options>{List}</Options>
-        <Icons>
-          <Icon>
-            <FiSearch />
-          </Icon>
-          <Icon>
-            <FiUser />
-          </Icon>
-          <Icon>
-            <FiShoppingBag />
-          </Icon>
-        </Icons>
+        <Icons />
       </Content>
     </Container>
   )

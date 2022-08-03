@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 import LogoBeResolution from '../../assets/BeResolution.svg'
 
 import { FiSearch, FiUser, FiShoppingBag } from 'react-icons/fi'
-import Hamburger from 'hamburger-react'
+import { HamburguerComponent } from './components/Hamburguer/index'
 
 interface OptionProps {
   router: string
@@ -51,7 +51,7 @@ export function Header() {
           </Icon>
         </Icons>
         <MenuContainer>
-          <Hamburger />
+          <HamburguerComponent />
         </MenuContainer>
       </Content>
     </Container>

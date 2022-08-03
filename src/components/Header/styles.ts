@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
+  min-height: 5rem;
   display: flex;
   align-self: flex-start;
   background-color: ${({ theme }) => theme.colors.primary};
@@ -15,19 +16,19 @@ export const Content = styled.div`
   margin: 0 auto;
   width: 100%;
   @media (max-width: 75rem) {
-    width: 80rem;
+    max-width: 80rem;
   }
   @media (max-width: 60rem) {
-    width: 70rem;
+    max-width: 70rem;
   }
   @media (max-width: 50rem) {
-    width: 60rem;
+    max-width: 60rem;
   }
   @media (max-width: 40rem) {
-    width: 50rem;
+    max-width: 50rem;
   }
   @media (max-width: 35rem) {
-    width: 40rem;
+    max-width: 40rem;
   }
 `
 
@@ -62,7 +63,6 @@ export const Logo = styled.img`
 
 export const Icons = styled.div`
   display: flex;
-  justify-content: flex-end;
   width: 18rem;
   font-size: 2rem;
   color: white;

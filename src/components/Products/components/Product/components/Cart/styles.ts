@@ -1,8 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 20rem;
+  display: flex;
+  width: 100%;
   padding-top: 1.3rem;
+  align-items: center;
+  justify-content: center;
 `
 
 export const Content = styled.div`
@@ -10,13 +13,15 @@ export const Content = styled.div`
   align-items: center;
   border-radius: 0.5rem;
   background-color: #00281a;
-  height: 3rem;
+  height: 3rem; 
 `
 
 export const Text = styled.span`
   padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1rem;
   color: #fff;
+  background-color: #00281a;
 `
 
 export const Counter = styled.div`

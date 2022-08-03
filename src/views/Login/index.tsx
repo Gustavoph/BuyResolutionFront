@@ -1,6 +1,6 @@
 import { Container, Content } from './styles'
 
-import { Wellcome } from './components/Wellcome/Wellcome'
+import { Wellcome } from './components/Wellcome'
 import { Inputs } from './components/Inputs/Inputs'
 
 export function Login() {

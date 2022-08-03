@@ -5,6 +5,9 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   padding-right: 2rem;
+  @media (max-width: 45rem) {
+    margin-bottom: 3rem;
+  }
 `
 
 export const Text = styled.div`
@@ -12,6 +15,9 @@ export const Text = styled.div`
   flex-direction: column;
   color: #fff;
   padding-top: 2rem;
+  @media (max-width: 45rem) {
+    align-items: center;
+  }
 `
 
 export const Logo = styled.img``

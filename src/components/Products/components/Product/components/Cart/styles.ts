@@ -13,15 +13,25 @@ export const Content = styled.div`
   align-items: center;
   border-radius: 0.5rem;
   background-color: #00281a;
-  height: 3rem; 
+  width: 100%;
+  cursor: pointer;
+  height: 3rem;
+`
+export const TextContainer = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
 `
 
 export const Text = styled.span`
-  padding-left: 1rem;
-  padding-right: 1rem;
   font-size: 1rem;
+  padding: 0rem 1rem;
   color: #fff;
-  background-color: #00281a;
+  user-select: none;
+  @media (max-width: 50rem) {
+    font-size: 0.9rem;
+    padding: 0rem 3rem;
+  }
 `
 
 export const Counter = styled.div`
@@ -31,17 +41,21 @@ export const Counter = styled.div`
   height: 100%;
   border-radius: 0.5rem 0 0 0.5rem;
   background-color: ${({ theme }) => theme.colors.primary};
-  cursor: pointer;
 `
 
 export const Amount = styled.span`
   font-size: 1.4rem;
   color: #fff;
+  user-select: none;
+  @media (max-width: 50rem) {
+    font-size: 1.3rem;
+  }
 `
 
 export const Icon = styled.div`
   padding-right: 1rem;
   padding-left: 1rem;
-  font-size: 1.5rem;
+  padding-top: 0.32rem;
+  font-size: 1.4rem;
   color: #fff;
 `

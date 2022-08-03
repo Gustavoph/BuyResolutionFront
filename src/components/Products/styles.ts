@@ -13,8 +13,9 @@ export const Content = styled.div`
   max-width: 112rem;
   margin: 0 auto;
   width: 100%;
-  @media (max-width: 70rem) {
-    width: 80rem;
+  padding: 0rem 1rem;
+  @media (max-width: 75rem) {
+    max-width: 80rem;
   }
   @media (max-width: 60rem) {
     width: 70rem;

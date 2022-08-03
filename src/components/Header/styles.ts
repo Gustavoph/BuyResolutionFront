@@ -14,7 +14,7 @@ export const Content = styled.div`
   max-width: 112rem;
   margin: 0 auto;
   width: 100%;
-  @media (max-width: 70rem) {
+  @media (max-width: 75rem) {
     width: 80rem;
   }
   @media (max-width: 60rem) {
@@ -81,6 +81,7 @@ export const Icon = styled.div`
 
 export const MenuContainer = styled.div`
   color: #fff;
+  padding: 0rem 1rem;
   @media (min-width: 50rem) {
     display: none;
   }

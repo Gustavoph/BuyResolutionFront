@@ -5,16 +5,14 @@ export const Container = styled.div`
   height: 23.7rem;
   padding: 1rem 0rem;
   @media (max-width: 60rem) {
-    width: 20rem;
+    padding: 1rem 1rem;
+    width: 30rem;
   }
   @media (max-width: 50rem) {
-    width: 18rem;
+    width: 25rem;
   }
   @media (max-width: 40rem) {
-    width: 50rem;
-  }
-  @media (max-width: 35rem) {
-    width: 40rem;
+    width: 30rem;
   }
 `
 
@@ -48,15 +46,14 @@ export const Informations = styled.div`
   @media (max-width: 40rem) {
     align-items: center;
   }
-
 `
 
 export const Name = styled.span`
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #fff;
 `
 
 export const Price = styled.span`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #fff;
 `

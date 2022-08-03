@@ -6,7 +6,7 @@ import {
   Logo,
   Icons,
   Icon,
-  MenuContainer
+  MenuContainer,
 } from './styles'
 
 import { Link } from 'react-router-dom'
@@ -51,7 +51,7 @@ export function Header() {
           </Icon>
         </Icons>
         <MenuContainer>
-          <Hamburger/>
+          <Hamburger />
         </MenuContainer>
       </Content>
     </Container>

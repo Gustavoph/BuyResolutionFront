@@ -3,8 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  width: 41.5rem;
-  height: 39.7rem;
   border-radius: ${({ theme }) => theme.border.radius};
   background-color: ${({ theme }) => theme.colors.secondary};
 `
@@ -14,7 +12,7 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 8.6rem 5rem;
+  padding: 5rem 5rem;
 `
 
 export const LogIn = styled.div`
@@ -31,13 +29,14 @@ export const Input = styled.input`
   width: ${({ theme }) => theme.inputSize.md.width};
   height: ${({ theme }) => theme.inputSize.md.height};
   margin-bottom: 2rem;
+  padding: 0.4rem 1.2rem;
   border: ${({ theme }) => theme.border.type};
   border-radius: ${({ theme }) => theme.border.radius};
   outline: none;
 `
 
 export const LogInButton = styled.button`
-  width: ${({ theme }) => theme.inputSize.md.width};
+  width: 100%;
   height: ${({ theme }) => theme.inputSize.md.height};
   border: ${({ theme }) => theme.border.type};
   border-radius: ${({ theme }) => theme.border.radius};
@@ -50,7 +49,7 @@ export const LogInButton = styled.button`
 `
 
 export const SignUpButton = styled.button`
-  width: ${({ theme }) => theme.inputSize.md.width};
+  width: 100%;
   height: ${({ theme }) => theme.inputSize.md.height};
   border: ${({ theme }) => theme.border.type};
   border-radius: ${({ theme }) => theme.border.radius};
@@ -65,7 +64,7 @@ export const SignUpButton = styled.button`
 export const Division = styled.div`
   display: flex;
   align-items: center;
-  width: ${({ theme }) => theme.inputSize.md.width};
+  width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: #fff;

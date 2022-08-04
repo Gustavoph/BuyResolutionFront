@@ -66,7 +66,7 @@ export const Icons = styled.div`
   justify-content: flex-end;
   width: 18rem;
   font-size: 2rem;
-  color: white;
+  color: #fff;
   @media (max-width: 50rem) {
     display: none;
   }
@@ -75,8 +75,12 @@ export const Icons = styled.div`
 export const Icon = styled.div`
   padding: 1rem;
   cursor: pointer;
-  :hover {
-    color: gray;
+  a {
+    text-decoration: none;
+    color: #fff;
+    :hover {
+      color: gray;
+    }
   }
 `
 

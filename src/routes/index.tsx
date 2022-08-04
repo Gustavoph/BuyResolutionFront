@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Login } from '../views/Login'
 import { Market } from '../views/Market'
 import { SignUp } from '../views/SignUp'
+import { Profile } from '../views/Profile'
 import { Container } from './styles'
 
 export function AppRoutes() {
@@ -20,6 +21,7 @@ export function AppRoutes() {
           element={<Market food={false} drink={true} />}
         />
         <Route path="/market" element={<Market food={false} drink={true} />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Container>
   )

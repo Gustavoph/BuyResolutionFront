@@ -44,10 +44,14 @@ export function Header() {
             <FiSearch />
           </Icon>
           <Icon>
-            <FiUser />
+            <Link to={'/profile'}>
+              <FiUser />
+            </Link>
           </Icon>
           <Icon>
-            <FiShoppingBag />
+            <Link to={'/market'}>
+              <FiShoppingBag />
+            </Link>
           </Icon>
         </Icons>
         <MenuContainer>

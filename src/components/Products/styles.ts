@@ -14,7 +14,7 @@ export const Content = styled.div`
   margin: 0 auto;
   width: 100%;
   padding: 0rem 1rem;
-  @media (max-width: 50rem){
+  @media (max-width: 50rem) {
     flex-direction: column;
   }
 `

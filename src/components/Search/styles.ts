@@ -13,6 +13,7 @@ export const Content = styled.div`
   width: 100%;
   padding: 0rem 1rem;
   @media (max-width: 75rem) {
+    padding: 0rem;
     width: 80rem;
     justify-content: center;
     flex-direction: column;
@@ -58,7 +59,6 @@ export const InputSearch = styled.input`
 
 export const Buttons = styled.div`
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   @media (min-width: 75rem) {
     padding-left: 4rem;

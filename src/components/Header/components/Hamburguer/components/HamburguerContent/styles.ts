@@ -6,8 +6,8 @@ export const Container = styled.div`
   position: absolute;
   width: 20rem;
   right: 0;
-  min-height: 100vh;
-  background-color: ${({theme})=> theme.colors.primary};
+  min-height: 50vh;
+  background-color: ${({ theme }) => theme.colors.primary};
 `
 
 export const Content = styled.div`
@@ -15,17 +15,18 @@ export const Content = styled.div`
 `
 
 export const Topics = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  a {
+    text-decoration: none;
+  }
 `
 
 export const Topic = styled.div`
   display: flex;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  :hover{
+  :hover {
     filter: brightness(0.8);
   }
 `
@@ -33,11 +34,11 @@ export const Topic = styled.div`
 export const TopicTitle = styled.span`
   font-size: 2rem;
   padding: 1rem;
+  color: #fff;
 `
 
 export const Icon = styled.div`
-  font-size: 2rem;  
-  padding: 1rem;
+  font-size: 2rem;
   cursor: pointer;
   :hover {
     color: gray;

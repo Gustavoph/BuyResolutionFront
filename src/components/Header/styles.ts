@@ -63,6 +63,7 @@ export const Logo = styled.img`
 
 export const Icons = styled.div`
   display: flex;
+  justify-content: flex-end;
   width: 18rem;
   font-size: 2rem;
   color: white;

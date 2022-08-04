@@ -1,19 +1,27 @@
 import { Container, Content, Topics, Topic, TopicTitle, Icon } from './styles'
 import { FiSearch, FiUser, FiShoppingBag } from 'react-icons/fi'
 
-export function HamburguerContent() { 
+import { Link } from 'react-router-dom'
+
+export function HamburguerContent() {
   return (
     <Container>
       <Content>
         <Topics>
           <Topic>
-            <TopicTitle>Geral</TopicTitle>
+            <Link to={'/market'}>
+              <TopicTitle>Geral</TopicTitle>
+            </Link>
           </Topic>
           <Topic>
-            <TopicTitle>Comida</TopicTitle>
+            <Link to={'/market/foods'}>
+              <TopicTitle>Comida</TopicTitle>
+            </Link>
           </Topic>
           <Topic>
-            <TopicTitle>Bebida</TopicTitle>
+            <Link to={'/market/drinks'}>
+              <TopicTitle>Bebida</TopicTitle>
+            </Link>
           </Topic>
           <Topic>
             <Icon>

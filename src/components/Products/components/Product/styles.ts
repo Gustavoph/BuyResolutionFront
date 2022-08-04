@@ -9,7 +9,7 @@ export const Container = styled.div`
     width: 30rem;
   }
   @media (max-width: 50rem) {
-    width: 25rem;
+    width: 30rem;
   }
   @media (max-width: 40rem) {
     width: 30rem;

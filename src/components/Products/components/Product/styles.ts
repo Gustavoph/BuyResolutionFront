@@ -3,7 +3,17 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 23rem;
   height: 23.7rem;
-  padding: 1rem;
+  padding: 1rem 0rem;
+  @media (max-width: 60rem) {
+    padding: 1rem 1rem;
+    width: 30rem;
+  }
+  @media (max-width: 50rem) {
+    width: 30rem;
+  }
+  @media (max-width: 40rem) {
+    width: 30rem;
+  }
 `
 
 export const Content = styled.div`
@@ -30,16 +40,20 @@ export const Informations = styled.div`
   justify-content: center;
   height: 10rem;
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
   border-radius: 0 0 0.5rem 0.5rem;
   background-color: ${({ theme }) => theme.colors.tertiary};
+  @media (max-width: 40rem) {
+    align-items: center;
+  }
 `
 
 export const Name = styled.span`
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #fff;
 `
 
 export const Price = styled.span`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #fff;
 `

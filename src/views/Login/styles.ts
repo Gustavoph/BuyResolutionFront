@@ -12,4 +12,7 @@ export const Content = styled.div`
   align-items: center;
   max-width: 112rem;
   margin: 0 auto;
+  @media (max-width: 45rem) {
+    flex-direction: column;
+  }
 `

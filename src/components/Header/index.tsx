@@ -6,6 +6,7 @@ import {
   Logo,
   Icons,
   Icon,
+  MenuContainer,
 } from './styles'
 
 import { Link } from 'react-router-dom'
@@ -13,6 +14,7 @@ import { Link } from 'react-router-dom'
 import LogoBeResolution from '../../assets/BeResolution.svg'
 
 import { FiSearch, FiUser, FiShoppingBag } from 'react-icons/fi'
+import { HamburguerComponent } from './components/Hamburguer/index'
 
 interface OptionProps {
   router: string
@@ -48,6 +50,9 @@ export function Header() {
             <FiShoppingBag />
           </Icon>
         </Icons>
+        <MenuContainer>
+          <HamburguerComponent />
+        </MenuContainer>
       </Content>
     </Container>
   )

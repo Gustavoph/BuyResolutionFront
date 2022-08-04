@@ -7,11 +7,14 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   max-width: 112rem;
   margin: 0 auto;
   width: 100%;
+  padding: 0rem 1rem;
+  @media (max-width: 50rem) {
+    flex-direction: column;
+  }
 `

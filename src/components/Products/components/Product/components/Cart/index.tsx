@@ -1,4 +1,12 @@
-import { Container, Content, Text, Counter, Amount, Icon } from './styles'
+import {
+  Container,
+  Content,
+  Text,
+  Counter,
+  Amount,
+  Icon,
+  TextContainer,
+} from './styles'
 
 import { FiShoppingCart } from 'react-icons/fi'
 import { useState } from 'react'
@@ -8,14 +16,16 @@ export function Cart() {
 
   return (
     <Container>
-      <Content>
-        <Counter onClick={() => setCounter(counter + 1)}>
+      <Content onClick={() => setCounter(counter + 1)}>
+        <Counter>
           <Icon>
             <FiShoppingCart />
           </Icon>
           <Amount>{counter}</Amount>
         </Counter>
-        <Text>ADICIONAR AO CARRINHO</Text>
+        <TextContainer>
+          <Text>ADICIONAR AO CARRINHO</Text>
+        </TextContainer>
       </Content>
     </Container>
   )
